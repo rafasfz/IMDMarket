@@ -15,13 +15,17 @@
     <string name="deletar_produto">Deletar produto</string>
     <string name="cadastrar_produto_upper">CADASTRAR PRODUTO</string>
     <string name="alterar_produto_upper">ALTERAR PRODUTO</string>
+    <string name="deletar_produto_upper">DELETAR PRODUTO</string>
+    <string name="lista_produto_upper">LISTA DE PRODUTO</string>
     <string name="codigo">Código produto:</string>
     <string name="nome">Nome produto:</string>
     <string name="descricao">Descrição do produto:</string>
     <string name="estoque">Estoque:</string>
     <string name="salvar">Salvar</string>
     <string name="alterar">Alterar</string>
+    <string name="deletar">Deletar</string>
     <string name="limpar">Limpar</string>
+    <string name="voltar">Voltar</string>
 
 
 </resources>
