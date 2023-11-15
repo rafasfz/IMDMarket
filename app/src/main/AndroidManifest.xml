@@ -16,6 +16,9 @@
             android:name=".RegisterProductActivity"
             android:exported="false" />
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeleteProductActivity"
             android:exported="false" />
         <activity

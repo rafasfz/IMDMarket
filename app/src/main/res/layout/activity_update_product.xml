@@ -17,11 +17,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8"
+        app:layout_constraintTop_toBottomOf="@+id/estoqueText"
         app:layout_constraintVertical_bias="0.481" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btn_limpar"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:text="@string/limpar"
@@ -31,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.257"
         app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText8"
+        app:layout_constraintTop_toBottomOf="@+id/estoqueText"
         app:layout_constraintVertical_bias="0.481" />
 
     <EditText
-        android:id="@+id/editTextText8"
+        android:id="@+id/estoqueText"
         android:layout_width="365dp"
         android:layout_height="56dp"
         android:layout_marginTop="544dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/descricaoText"
         android:layout_width="365dp"
         android:layout_height="56dp"
         android:layout_marginTop="428dp"
@@ -83,7 +83,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/nomeText"
         android:layout_width="365dp"
         android:layout_height="56dp"
         android:layout_marginTop="300dp"
@@ -151,7 +151,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/codigoText"
         android:layout_width="365dp"
         android:layout_height="56dp"
         android:layout_marginTop="188dp"
