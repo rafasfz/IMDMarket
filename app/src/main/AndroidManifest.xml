@@ -16,6 +16,15 @@
             android:name=".RegisterProductActivity"
             android:exported="false" />
         <activity
+            android:name=".DeleteProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

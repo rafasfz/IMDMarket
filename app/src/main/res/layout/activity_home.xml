@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/go_register_product"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:layout_marginTop="184dp"
@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/go_update_product"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:layout_marginTop="288dp"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/go_delete_product"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:layout_marginTop="288dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/go_list_product"
         android:layout_width="156dp"
         android:layout_height="82dp"
         android:layout_marginTop="184dp"
@@ -99,7 +99,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/go_update_product"
         app:srcCompat="@drawable/baseline_home_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
