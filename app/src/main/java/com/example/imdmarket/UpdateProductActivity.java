@@ -1,5 +1,6 @@
 package com.example.imdmarket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,30 @@ public class UpdateProductActivity extends AppCompatActivity {
             nome.setText("", TextView.BufferType.NORMAL);
             descricao.setText("", TextView.BufferType.NORMAL);
             estoque.setText("", TextView.BufferType.NORMAL);
+        });
+
+        Button update_button = findViewById(R.id.btn_update);
+
+        update_button.setOnClickListener(view-> {
+            ProductRepository productRepository = new ProductRepository(getApplicationContext());
+            ProductEntity product = productRepository.getProductById(Integer.valueOf(codigo.getText().toString()));
+
+            if (!nome.getText().toString().matches("")) {
+                product.name = nome.getText().toString();
+            }
+
+            if (!descricao.getText().toString().matches("")) {
+                product.description = descricao.getText().toString();
+            }
+
+            if (!estoque.getText().toString().matches("")) {
+                product.stock = Integer.valueOf(estoque.getText().toString());
+            }
+
+            productRepository.updateProduct(product);
+
+            startActivity(new Intent(this, HomeActivity.class));
+
         });
     }
 }

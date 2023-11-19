@@ -62,6 +62,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ListView
+        android:id="@+id/products_list"
         android:layout_width="412dp"
         android:layout_height="451dp"
         android:layout_marginTop="100dp"
