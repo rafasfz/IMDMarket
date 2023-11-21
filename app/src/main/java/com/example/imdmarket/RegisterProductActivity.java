@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class RegisterProductActivity extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class RegisterProductActivity extends AppCompatActivity {
         Button create = findViewById(R.id.btn_update);
         create.setOnClickListener(view -> {
             registerProduct();
-            startActivity(new Intent(this, HomeActivity.class));
+
         });
     }
 
@@ -33,12 +34,22 @@ public class RegisterProductActivity extends AppCompatActivity {
         EditText descricao = findViewById(R.id.descricaoText);
         EditText estoque = findViewById(R.id.estoqueText);
 
+        if (getStringEditText(codigo).matches("") || getStringEditText(nome).matches("") || getStringEditText(descricao).matches("") || getStringEditText(estoque).matches("")) {
+            Toast.makeText(this, "Preencha todos os campos!", Toast.LENGTH_LONG).show();
+            return;
+        }
+
         ProductEntity product = new ProductEntity(Integer.valueOf(codigo.getText().toString()), nome.getText().toString(), descricao.getText().toString(), Integer.valueOf(estoque.getText().toString()));
 
         ProductRepository productRepository = new ProductRepository(getApplicationContext());
 
         productRepository.insertProduct(product);
         cleanTexts();
+        startActivity(new Intent(this, HomeActivity.class));
+    }
+
+    public String getStringEditText(EditText editText) {
+        return editText.getText().toString();
     }
 
     public void cleanTexts() {
